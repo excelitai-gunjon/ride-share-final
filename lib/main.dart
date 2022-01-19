@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(1080, 2160),
+      designSize: const Size(1080,2160),
       builder: () => GetMaterialApp(
         title: 'Ei Khali',
         theme: ThemeData(

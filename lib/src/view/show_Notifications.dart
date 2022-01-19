@@ -137,6 +137,7 @@ class CancelRequest extends StatelessWidget {
     return InkWell(
       onTap: () {
         Navigator.pop(context);
+        Get.back(result: "ok");
       },
       child: Container(
         height: size.height * .3,
@@ -153,14 +154,14 @@ class CancelRequest extends StatelessWidget {
               Text(
                 "Cancel Request!",
                 style: TextStyle(
-                    color: Color(0xfffe8550), fontWeight: FontWeight.bold),
+                    color: Color(0xfffe8550),
+                    fontWeight: FontWeight.bold),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20),
                 child: Text(
                   "This AlertDialog makes it able to accept user input. In the following example, we are going to add "
-                  "text field input in the alert dialog. "
-                  "Open the main.dart file and insert the ",
+                  "text field input in the alert dialog. ",
                   style: TextStyle(color: Colors.grey, fontSize: 12),
                 ),
               ),

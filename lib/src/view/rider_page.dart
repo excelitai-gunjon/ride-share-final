@@ -21,7 +21,8 @@ class Rider extends StatelessWidget {
             width: size.width,
             decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("images/map2.png"), fit: BoxFit.fill),
+                  image: AssetImage("images/map2.png"),
+                  fit: BoxFit.fill),
             ),
           ),
           SafeArea(
@@ -261,15 +262,10 @@ class Rider extends StatelessWidget {
                                           child: AlertDialog(
                                             //backgroundColor: Colors.red,
                                             contentPadding: EdgeInsets.zero,
-                                            title: Center(
-                                              child: Text(""),
-                                            ),
-                                            content: Column(
-                                              mainAxisSize: MainAxisSize.min,
-                                              children: [
-                                                CancelRequest(),
-                                              ],
-                                            ),
+                                            // title: Center(
+                                            //   child: Text(""),
+                                            // ),
+                                            content: CancelRequest(),
                                           ),
                                         );
                                       },
